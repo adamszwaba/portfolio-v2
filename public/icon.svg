@@ -1,15 +1,28 @@
-<svg viewBox="0 0 85 92" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="43" width="43" height="49">
-<rect y="43.7483" width="42.5" height="48.2517" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask0)">
-<path d="M42.5 46.6542L85 68.8454L42.5 91.0365L0 68.8454L42.5 46.6542Z" fill="#000"/>
-</g>
-<mask id="mask1" mask-type="alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="85" height="92">
-<rect width="85" height="92" fill="#C4C4C4"/>
-</mask>
-<g mask="url(#mask1)">
-<path d="M42.5 0.686859L85 22.3496L42.5 44.0124L0 22.3496L42.5 0.686859Z" fill="#000"/>
-<path d="M0 21.8213L42.5 44.0124L0 66.2036L-42.5 44.0124L0 21.8213Z" fill="#333333"/>
-</g>
-</svg>
+ <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" version="1.1">
+      <circle cx="86.86" cy="84.59" r="4.44" fill="#ffcc00" />
+      <circle cx="104.19" cy="75.81" r="2.09" fill="#ffcc00" />
+      <circle cx="112.90" cy="88.28" r="3.49" fill="#ffcc00" />
+      <circle cx="106.98" cy="109.42" r="3" fill="#ffcc00" />
+      <circle cx="122.09" cy="139.03" r="4.66" fill="#ffcc00" />
+      <circle cx="93.29" cy="144.14" r="3.14" fill="#ffcc00" />
+      <circle cx="99.34" cy="117.25" r="3.41" fill="#ffcc00" />
+      <circle cx="138.76" cy="74.73" r="1.09" fill="#ffcc00" />
+      <circle cx="142.55" cy="79.05" r="1.32" fill="#ffcc00" />
+      <circle cx="142.31" cy="90.62" r="1.86" fill="#ffcc00" />
+      <circle cx="139.82" cy="101.75" r="1.83" fill="#ffcc00" />
+      <circle cx="136.11" cy="104.34" r="1.22" fill="#ffcc00" />
+
+      <line x1="86.86" y1="84.59" x2="104.19" y2="75.81" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="104.19" y1="75.81" x2="112.90" y2="88.28" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="112.90" y1="88.28" x2="106.98" y2="109.42" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="106.98" y1="109.42" x2="122.09" y2="139.03" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="122.09" y1="139.03" x2="93.29" y2="144.14" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="93.29" y1="144.14" x2="99.34" y2="117.25" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="99.34" y1="117.25" x2="86.86" y2="84.59" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="112.90" y1="88.28" x2="143.39" y2="85.84" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="143.39" y1="85.84" x2="138.76" y2="74.73" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="138.76" y1="74.73" x2="142.55" y2="79.05" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="142.55" y1="79.05" x2="142.31" y2="90.62" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="142.31" y1="90.62" x2="139.82" y2="101.75" stroke="#e5e7eb" strokeWidth="0.8" />
+      <line x1="139.82" y1="101.75" x2="136.11" y2="104.34" stroke="#e5e7eb" strokeWidth="0.8" />
+    </svg>
