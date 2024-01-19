@@ -1,4 +1,3 @@
-import { FaGithub } from 'react-icons/fa'
 import Logo from './logo'
 import NextLink from 'next/link'
 

@@ -1,28 +1,28 @@
- <svg xmlns="http://www.w3.org/2000/svg" width="200" height="200" version="1.1">
-      <circle cx="86.86" cy="84.59" r="4.44" fill="#ffcc00" />
-      <circle cx="104.19" cy="75.81" r="2.09" fill="#ffcc00" />
-      <circle cx="112.90" cy="88.28" r="3.49" fill="#ffcc00" />
-      <circle cx="106.98" cy="109.42" r="3" fill="#ffcc00" />
-      <circle cx="122.09" cy="139.03" r="4.66" fill="#ffcc00" />
-      <circle cx="93.29" cy="144.14" r="3.14" fill="#ffcc00" />
-      <circle cx="99.34" cy="117.25" r="3.41" fill="#ffcc00" />
-      <circle cx="138.76" cy="74.73" r="1.09" fill="#ffcc00" />
-      <circle cx="142.55" cy="79.05" r="1.32" fill="#ffcc00" />
-      <circle cx="142.31" cy="90.62" r="1.86" fill="#ffcc00" />
-      <circle cx="139.82" cy="101.75" r="1.83" fill="#ffcc00" />
-      <circle cx="136.11" cy="104.34" r="1.22" fill="#ffcc00" />
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 60 90" height="64" width="64">
+  <circle cx="0" cy="24.97" r="2.22" fill="#14b8a6" />
+  <circle cx="17.33" cy="16.19" r="1.04" fill="#14b8a6" />
+  <circle cx="26.04" cy="28.66" r="1.75" fill="#14b8a6" />
+  <circle cx="20.12" cy="49.80" r="1.5" fill="#14b8a6" />
+  <circle cx="35.23" cy="79.41" r="2.33" fill="#14b8a6" />
+  <circle cx="6.43" cy="84.52" r="1.57" fill="#14b8a6" />
+  <circle cx="12.48" cy="57.63" r="1.71" fill="#14b8a6" />
+  <circle cx="51.90" cy="15.10" r="0.54" fill="#14b8a6" />
+  <circle cx="55.69" cy="19.42" r="0.66" fill="#14b8a6" />
+  <circle cx="55.45" cy="31.00" r="0.93" fill="#14b8a6" />
+  <circle cx="52.96" cy="42.14" r="0.92" fill="#14b8a6" />
+  <circle cx="49.25" cy="44.73" r="0.61" fill="#14b8a6" />
 
-      <line x1="86.86" y1="84.59" x2="104.19" y2="75.81" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="104.19" y1="75.81" x2="112.90" y2="88.28" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="112.90" y1="88.28" x2="106.98" y2="109.42" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="106.98" y1="109.42" x2="122.09" y2="139.03" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="122.09" y1="139.03" x2="93.29" y2="144.14" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="93.29" y1="144.14" x2="99.34" y2="117.25" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="99.34" y1="117.25" x2="86.86" y2="84.59" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="112.90" y1="88.28" x2="143.39" y2="85.84" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="143.39" y1="85.84" x2="138.76" y2="74.73" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="138.76" y1="74.73" x2="142.55" y2="79.05" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="142.55" y1="79.05" x2="142.31" y2="90.62" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="142.31" y1="90.62" x2="139.82" y2="101.75" stroke="#e5e7eb" strokeWidth="0.8" />
-      <line x1="139.82" y1="101.75" x2="136.11" y2="104.34" stroke="#e5e7eb" strokeWidth="0.8" />
-    </svg>
+  <line x1="0" y1="24.97" x2="17.33" y2="16.19" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="17.33" y1="16.19" x2="26.04" y2="28.66" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="26.04" y1="28.66" x2="20.12" y2="49.80" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="20.12" y1="49.80" x2="35.23" y2="79.41" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="35.23" y1="79.41" x2="6.43" y2="84.52" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="6.43" y1="84.52" x2="12.48" y2="57.63" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="12.48" y1="57.63" x2="0" y2="24.97" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="26.04" y1="28.66" x2="55.53" y2="26.32" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="55.53" y1="26.32" x2="51.90" y2="15.10" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="51.90" y1="15.10" x2="55.69" y2="19.42" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="55.69" y1="19.42" x2="55.45" y2="31.00" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="55.45" y1="31.00" x2="52.96" y2="42.14" stroke="#e5e7eb99" strokeWidth="1" />
+  <line x1="52.96" y1="42.14" x2="49.25" y2="44.73" stroke="#e5e7eb99" strokeWidth="1" />
+</svg>

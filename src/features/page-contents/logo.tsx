@@ -1,18 +1,18 @@
 const Logo = ({ ...props }: React.SVGProps<SVGSVGElement>) => {
   return (
     <svg xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 60 90" {...props}>
-      <circle cx="0" cy="24.97" r="2.22" fill="#ffcc00" />
-      <circle cx="17.33" cy="16.19" r="1.04" fill="#ffcc00" />
-      <circle cx="26.04" cy="28.66" r="1.75" fill="#ffcc00" />
-      <circle cx="20.12" cy="49.80" r="1.5" fill="#ffcc00" />
-      <circle cx="35.23" cy="79.41" r="2.33" fill="#ffcc00" />
-      <circle cx="6.43" cy="84.52" r="1.57" fill="#ffcc00" />
-      <circle cx="12.48" cy="57.63" r="1.71" fill="#ffcc00" />
-      <circle cx="51.90" cy="15.10" r="0.54" fill="#ffcc00" />
-      <circle cx="55.69" cy="19.42" r="0.66" fill="#ffcc00" />
-      <circle cx="55.45" cy="31.00" r="0.93" fill="#ffcc00" />
-      <circle cx="52.96" cy="42.14" r="0.92" fill="#ffcc00" />
-      <circle cx="49.25" cy="44.73" r="0.61" fill="#ffcc00" />
+      <circle cx="0" cy="24.97" r="2.22" fill="#14b8a6" />
+      <circle cx="17.33" cy="16.19" r="1.04" fill="#14b8a6" />
+      <circle cx="26.04" cy="28.66" r="1.75" fill="#14b8a6" />
+      <circle cx="20.12" cy="49.80" r="1.5" fill="#14b8a6" />
+      <circle cx="35.23" cy="79.41" r="2.33" fill="#14b8a6" />
+      <circle cx="6.43" cy="84.52" r="1.57" fill="#14b8a6" />
+      <circle cx="12.48" cy="57.63" r="1.71" fill="#14b8a6" />
+      <circle cx="51.90" cy="15.10" r="0.54" fill="#14b8a6" />
+      <circle cx="55.69" cy="19.42" r="0.66" fill="#14b8a6" />
+      <circle cx="55.45" cy="31.00" r="0.93" fill="#14b8a6" />
+      <circle cx="52.96" cy="42.14" r="0.92" fill="#14b8a6" />
+      <circle cx="49.25" cy="44.73" r="0.61" fill="#14b8a6" />
 
       <line x1="0" y1="24.97" x2="17.33" y2="16.19" stroke="#e5e7eb99" strokeWidth="1" />
       <line x1="17.33" y1="16.19" x2="26.04" y2="28.66" stroke="#e5e7eb99" strokeWidth="1" />
