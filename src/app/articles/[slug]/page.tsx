@@ -17,8 +17,9 @@ export async function generateMetadata({ params: { slug } }: ArticlePageProps): 
   const article = allArticles.find((article) => article.slug === `/articles/${slug}`)
   if (!article) notFound()
   return {
-    title: article.title,
+    title: `${article.title} | Adam Szwaba`,
     description: article.excerpt,
+    metadataBase: new URL('https://adamszwaba.com'),
     openGraph: {
       type: 'article',
       authors: ['Adam Szwaba'],
