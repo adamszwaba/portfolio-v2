@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang="en">
       <body className={inter.className}>
         <AppBar />
-        {children}
+        <main className="container mx-auto py-4">{children}</main>
         <Footer />
       </body>
     </html>
