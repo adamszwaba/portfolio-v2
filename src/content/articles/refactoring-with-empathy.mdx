@@ -20,13 +20,13 @@ And that's when trouble started.
 
 I dove in. Read the code, started clicking around, found first example of an API call.
 
-```tsx
+```tsx showLineNumbers title="api/someApi/index.ts"
 const SomeComponent = () => {
   const fetchSpeficifData = useFetchSpecificData()
   ...
   return (
     ...
-    <Button onClick={fetchSpecificData}>
+    <Button onClick={fetchSpecificData} />
   )
 }
 ```
@@ -76,7 +76,7 @@ export const fetchSpecificData = async () => {
 
 Okay, we're getting defensive. Also, ajv? And there's 4 more files. In total, I found 4 more files that needed to be touched to implement a new call:
 
-```tsx
+```tsx showLineNumbers title="api/specificApi/mocks.ts"
 /** api/specificApi/mocks.ts
  * this file contained mocks for the api call itself
 */
@@ -195,8 +195,7 @@ First thing we should do - ditch the unnecessary tests for mocks. Then, go step 
 
 Documentation is great. Code that documents itself is better.
 
-```tsx
-// api/createRequest.ts
+```tsx showLineNumbers title="api/createRequest.ts"
 export const createValidatedRequest = (url: string, validatorFunction: <T extends object>(response: any): T {}, options?: RequestInit) => {
   return async (url: string, options?: RequestInit) => {
     const response = await fetch(url, options);
@@ -218,8 +217,7 @@ This also means that for every request using this function to be safe, we have t
 
 Now that another place ensures the existence of a validation of a request, how about we remove another file which needs to be changed every time we add a new request? What validations there were, let them stay, but let's use something else for the new ones. Like, er, zod.
 
-```tsx
-// api/specificApi/schema.ts
+```tsx showLineNumbers title="api/specificApi/schema.ts"
 export const specificDataSchema = z.object({
   id: z.string(),
   name: z.string(),
@@ -240,8 +238,7 @@ Almost one liners. Might even stick them in one file, who knows.
 
 ...and too old. React-query is fine and all, but we're stuck with redux. Rtk-query, anyone?
 
-```tsx
-// api/specificApi/index.ts
+```tsx showLineNumbers title="api/specificApi/index.ts"
 export const fetchSpecificData = createValidatedRequest(
   '/api/specificData',
   specificDataSchema.parse

@@ -7,7 +7,7 @@ const AppBar: React.FC = () => {
       <div className="container flex items-center justify-between m-auto">
         <NextLink href="/" className="flex items-center">
           <Logo height={64} width={64} />
-          <span className=" ml-2 h-16 pl-2 flex-grow leading-[4rem] hover:underline font-bold text-2xl">
+          <span className="ml-2 h-16 pl-2 flex-grow leading-[4rem] hover:underline font-bold text-2xl">
             @ Adam Szwaba
           </span>
         </NextLink>
