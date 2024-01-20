@@ -4,16 +4,16 @@ import { useMDXComponent } from 'next-contentlayer/hooks'
 import { notFound } from 'next/navigation'
 import MDXProviderComponents from '@/features/page-contents/mdx-components'
 
+type ArticlePageProps = {
+  params: { slug: string }
+}
+
 export async function generateStaticParams() {
   const slugs = allArticles.map((article) => article.slug)
   return slugs.map((slug) => ({ slug }))
 }
 
-export async function generateMetadata({
-  params: { slug },
-}: {
-  params: { slug: string }
-}): Promise<Metadata> {
+export async function generateMetadata({ params: { slug } }: ArticlePageProps): Promise<Metadata> {
   const article = allArticles.find((article) => article.slug === `/articles/${slug}`)
   if (!article) notFound()
   return {
@@ -28,7 +28,7 @@ export async function generateMetadata({
   }
 }
 
-const ArticlePage: NextPage<{ params: { slug: string } }> = async ({ params }) => {
+const ArticlePage: NextPage<ArticlePageProps> = async ({ params }) => {
   const article = allArticles.find((article) => article.slug === `/articles/${params.slug}`)
 
   if (!article) notFound()
