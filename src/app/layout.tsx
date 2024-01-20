@@ -4,6 +4,7 @@ import './globals.css'
 import AppBar from '@/features/page-contents/app-bar'
 import Footer from '@/features/page-contents/footer'
 import { SpeedInsights } from '@vercel/speed-insights/next'
+import { Analytics } from '@vercel/analytics/react'
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <main className="container mx-auto py-4">{children}</main>
         <Footer />
         <SpeedInsights />
+        <Analytics />
       </body>
     </html>
   )
