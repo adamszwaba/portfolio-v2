@@ -20,6 +20,7 @@ const ArticlePage: NextPage<{ params: { slug: string } }> = async ({ params }) =
     <article>
       <h1>{article.title}</h1>
       <MDXContent components={MDXProviderComponents} />
+      <h4 className="ml-auto w-max text-slate-500">{article.publishedAt}</h4>
     </article>
   )
 }
