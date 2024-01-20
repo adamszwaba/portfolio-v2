@@ -13,6 +13,7 @@
     "clsx": "^2.1.0",
     "contentlayer": "^0.3.4",
     "date-fns": "^3.3.0",
+    "mdx": "^0.3.1",
     "next": "14.0.4",
     "next-contentlayer": "^0.3.4",
     "react": "^18.2.0",
@@ -22,6 +23,7 @@
     "shikiji": "0.10.0-beta.9"
   },
   "devDependencies": {
+    "@types/mdx": "^2.0.10",
     "@types/node": "^20.11.5",
     "@types/react": "^18.2.48",
     "@types/react-dom": "^18.2.18",

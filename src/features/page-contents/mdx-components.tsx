@@ -1,4 +1,4 @@
-import type { MDXComponents } from 'mdx/types'
+import { MDXComponents } from 'mdx/types'
 import Link from 'next/link'
 
 const MDXProviderComponents: MDXComponents = {

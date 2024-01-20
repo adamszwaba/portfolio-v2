@@ -21,7 +21,6 @@ And that's when trouble started.
 I dove in. Read the code, started clicking around, found first example of an API call.
 
 ```tsx
-// SomeComponent.tsx
 const SomeComponent = () => {
   const fetchSpeficifData = useFetchSpecificData()
   ...
@@ -34,8 +33,7 @@ const SomeComponent = () => {
 
 Well, okay then. Cool, there's a hook. Let's go there.
 
-```tsx
-// useFetchSpecificData.ts
+```tsx showLineNumbers title="useFetchSpecificData.ts"
 const useFetchSpecificData = () => {
   const dispatch = useDispatch()
   const fetch = () => {
@@ -47,8 +45,7 @@ const useFetchSpecificData = () => {
 
 Dispatch, redux. Nothing new. I was aware that we're dealing with a legacy, redux-saga based codebase. No issue. Slightly worried about no loading, error, aborting etc, but considering we're dealing with redux-saga, it's nothing eye raising. The loading state is most likely in the saga itself. Let's find out.
 
-```tsx
-// store/specificStore/actions.ts
+```tsx showLineNumbers title="specificStore/sagas.ts"
 export const FETCH_SPECIFIC_DATA_REQUESTED = 'FETCH_SPECIFIC_DATA_REQUESTED'
 export const fetchSpecificDataAction = () => ({
   type: FETCH_SPECIFIC_DATA_REQUESTED,
@@ -67,8 +64,7 @@ export function* fetchSpecificDataSaga() {
 
 Cool. At this moment, I'm starting to get a little tired just reading this, and remembering how much work implementing a whole new call was. Let's check the `fetchSpecificData` function.
 
-```tsx
-// api/specificApi/request.ts
+```tsx showLineNumbers title="api/specificApi/request.ts"
 const validate = (response: any): SpecificData => {
   return ajv.validate(SPECIFIC_DATA_SCHEMA_KEY, response)
 }
