@@ -3,7 +3,6 @@ import { Metadata, NextPage } from 'next'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import { notFound } from 'next/navigation'
 import MDXProviderComponents from '@/features/page-contents/mdx-components'
-import { format, parseISO } from 'date-fns'
 import Time from '@/components/time'
 
 type ArticlePageProps = {
