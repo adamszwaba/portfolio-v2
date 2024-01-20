@@ -3,6 +3,8 @@ import { Metadata, NextPage } from 'next'
 import { useMDXComponent } from 'next-contentlayer/hooks'
 import { notFound } from 'next/navigation'
 import MDXProviderComponents from '@/features/page-contents/mdx-components'
+import { format, parseISO } from 'date-fns'
+import Time from '@/components/time'
 
 type ArticlePageProps = {
   params: { slug: string }
@@ -38,9 +40,9 @@ const ArticlePage: NextPage<ArticlePageProps> = async ({ params }) => {
 
   return (
     <article>
-      <h1>{article.title}</h1>
+      <h1 className="mb-0">{article.title}</h1>
+      <Time dateTime={article.publishedAt} />
       <MDXContent components={MDXProviderComponents} />
-      <h4 className="ml-auto w-max text-slate-500">{article.publishedAt}</h4>
     </article>
   )
 }

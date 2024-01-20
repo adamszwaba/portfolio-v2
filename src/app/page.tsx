@@ -1,16 +1,18 @@
+import Time from '@/components/time'
 import { allArticles } from 'contentlayer/generated'
+import { compareDesc } from 'date-fns'
 import { Route } from 'next'
 import Link from 'next/link'
 
 export default function Home() {
-  const articles = allArticles
+  const articles = allArticles.sort((a, b) => compareDesc(a.publishedAt, b.publishedAt))
   return articles.map((article) => (
-    <div key={article._id} className="flex flex-col justify-between">
+    <div key={article._id} className="flex flex-col pb-8">
       <Link href={article.slug as Route}>
-        <h2 className="mb-0">{article.title}</h2>
+        <h2 className="my-0">{article.title}</h2>
       </Link>
-      <h4 className="mt-0 text-slate-500">{article.publishedAt}</h4>
-      <div role="doc-subtitle">{article.excerpt}</div>
+      <Time dateTime={article.publishedAt} />
+      <div>{article.excerpt}</div>
     </div>
   ))
 }

@@ -1,4 +1,5 @@
 import { defineDocumentType, makeSource } from 'contentlayer/source-files'
+import { default as rpc, Options } from 'rehype-pretty-code'
 
 export const Article = defineDocumentType(() => ({
   name: 'Article',
@@ -26,7 +27,15 @@ export const Article = defineDocumentType(() => ({
   },
 }))
 
+const rpcOptions: Partial<Options> = {
+  theme: 'catppuccin-mocha',
+}
+
 export default makeSource({
   contentDirPath: './src/content',
   documentTypes: [Article],
+  mdx: {
+    //@ts-expect-error
+    rehypePlugins: [[rpc, rpcOptions]],
+  },
 })
