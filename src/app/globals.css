@@ -3,67 +3,52 @@
 @tailwind utilities;
 
 body {
-  @apply prose dark:bg-slate-800 dark:prose-invert min-h-[100vh] bg-slate-50 max-w-none prose-a:text-teal-500 prose-a:font-semibold prose-a:transition-colors prose-a:duration-150 prose-a:ease-out prose-a:hover:text-teal-600 lg:prose-xl;
+  @apply prose dark:bg-slate-900 dark:prose-invert min-h-[100vh] bg-slate-50 max-w-none prose-a:text-teal-500 prose-a:font-semibold prose-a:transition-colors prose-a:duration-150 prose-a:ease-out prose-a:hover:text-teal-600 lg:prose-xl;
 }
 
 #__next {
   @apply min-h-screen flex flex-col justify-start;
 }
+@layer base {
+  figure[data-rehype-pretty-code-figure] {
+    @apply overflow-hidden bg-slate-900 rounded-md;
+  }
 
-figure[data-rehype-pretty-code-figure] {
-  overflow: hidden;
-}
+  figure[data-rehype-pretty-code-figure] pre {
+    @apply overflow-auto pt-2 pb-2 pl-0 pr-0 text-base;
+  }
 
-figure[data-rehype-pretty-code-figure] pre {
-  overflow-x: auto;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  padding-left: 0;
-  padding-right: 0;
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
+  figcaption[data-rehype-pretty-code-title] {
+    @apply overflow-hidden my-[0.125rem] rounded-sm bg-slate-800 p-2 text-sm font-semibold  px-3 py-1 text-teal-500;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
+      'Courier New', monospace;
+  }
 
-figcaption[data-rehype-pretty-code-title] {
-  overflow: hidden;
-  margin-bottom: 0.125rem;
-  border-radius: 0.375rem;
-  background-color: rgb(255 228 230 / 0.1);
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0.25rem;
-  padding-bottom: 0.25rem;
-  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-    'Courier New', monospace;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  color: rgb(255 228 230 / 0.7);
-}
+  figure[data-rehype-pretty-code-figure] [data-line] {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
 
-figure[data-rehype-pretty-code-figure] [data-line] {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+    border-left-width: 4px;
+    border-left-color: transparent;
+  }
 
-  border-left-width: 4px;
-  border-left-color: transparent;
-}
+  figure[data-rehype-pretty-code-figure] [data-highlighted-line] {
+    border-left-color: rgb(253 164 175 / 0.7);
+    background-color: rgb(254 205 211 / 0.1);
+  }
 
-figure[data-rehype-pretty-code-figure] [data-highlighted-line] {
-  border-left-color: rgb(253 164 175 / 0.7);
-  background-color: rgb(254 205 211 / 0.1);
-}
+  code[data-line-numbers] {
+    counter-reset: lineNumber;
+  }
 
-code[data-line-numbers] {
-  counter-reset: lineNumber;
-}
+  code[data-line-numbers] [data-line]::before {
+    counter-increment: lineNumber;
+    content: counter(lineNumber);
+    display: inline-block;
+    text-align: right;
 
-code[data-line-numbers] [data-line]::before {
-  counter-increment: lineNumber;
-  content: counter(lineNumber);
-  display: inline-block;
-  text-align: right;
-
-  margin-right: 0.75rem;
-  width: 1rem;
-  color: rgb(255 255 255 / 0.2);
+    margin-right: 0.75rem;
+    width: 1rem;
+    color: rgb(255 255 255 / 0.2);
+  }
 }
