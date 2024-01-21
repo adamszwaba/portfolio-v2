@@ -10,6 +10,10 @@ body {
   @apply min-h-screen flex flex-col justify-start;
 }
 @layer base {
+  blockquote {
+    @apply !border-teal-400 !border-l-[0.175rem] bg-slate-100 dark:bg-slate-700 rounded-sm;
+  }
+
   figure[data-rehype-pretty-code-figure] {
     @apply overflow-hidden bg-slate-900 rounded-md;
   }
