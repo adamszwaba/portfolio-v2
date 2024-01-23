@@ -4,13 +4,14 @@ import { useMDXComponent } from 'next-contentlayer/hooks'
 import { notFound } from 'next/navigation'
 import MDXProviderComponents from '@/features/page-contents/mdx-components'
 import Time from '@/components/time'
+import { shouldDisplayArticle } from '@/features/articles/utils'
 
 type ArticlePageProps = {
   params: { slug: string }
 }
 
 export async function generateStaticParams() {
-  const slugs = allArticles.map((article) => article.slug)
+  const slugs = allArticles.filter(shouldDisplayArticle).map((article) => article.slug)
   return slugs.map((slug) => ({ slug }))
 }
 
@@ -34,6 +35,8 @@ const ArticlePage: NextPage<ArticlePageProps> = async ({ params }) => {
   const article = allArticles.find((article) => article.slug === `/articles/${params.slug}`)
 
   if (!article) notFound()
+
+  if (article.isDraft) notFound()
 
   const MDXContent = useMDXComponent(article.body.code)
 
