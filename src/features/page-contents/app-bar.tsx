@@ -4,7 +4,7 @@ import NextLink from 'next/link'
 const AppBar: React.FC = () => {
   return (
     <nav className="not-prose w-full bg-slate-100 p-2 shadow-md dark:bg-slate-900">
-      <div className="container m-auto flex items-center justify-between px-6">
+      <div className="container m-auto flex items-center justify-between px-2">
         <NextLink href="/" className="flex items-center">
           <Logo className="w-8 h-8 sm:h-16 sm:w-16" />
           <span className="ml-2 h-16 flex-grow pl-2 text-md sm:text-2xl font-bold leading-[4rem] sm:leading-[4rem] hover:text-teal-400 hover:underline">
