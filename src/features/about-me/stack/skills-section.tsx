@@ -5,7 +5,7 @@ const SkillsSection = (stack: Stack) => {
   return (
     <>
       <h3 className="mb-2 text-xl font-bold text-gray-600">Skills</h3>
-      <p className="mb-4 ">Here are a few technologies I&apos;ve been working with recently:</p>
+      <p className="mb-4">Here are a few technologies I&apos;ve been working with recently:</p>
       {Object.entries(stack).map(([name, stackItems]) => (
         <div key={name}>
           <h3 className="font-bold capitalize">{name}</h3>

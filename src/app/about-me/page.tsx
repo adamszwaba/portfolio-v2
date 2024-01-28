@@ -12,16 +12,14 @@ export default function AboutMe() {
           alt="Avatar"
           className="h-16 w-16 rounded-full object-cover"
           height="64"
-          src="/profile.jpg"
-          style={{
-            aspectRatio: '64/64',
-            objectFit: 'cover',
-          }}
           width="64"
+          src="/profile.jpg"
         />
         <div>
-          <h1 className="text-3xl font-bold text-gray-100 dark:text-gray-800">@Adam Szwaba</h1>
-          <p className="text-gray-300 dark:text-gray-500">
+          <h1 className="text-xl sm:text-3xl font-bold text-gray-100 dark:text-gray-800">
+            @Adam Szwaba
+          </h1>
+          <p className="text-gray-300 dark:text-gray-500 text-xs sm:text-lg">
             Web Developer | Tech Enthusiast | Writer
           </p>
         </div>
