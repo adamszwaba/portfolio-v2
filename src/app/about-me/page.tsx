@@ -6,8 +6,8 @@ import SkillsSection from '@/features/about-me/stack/skills-section'
 
 export default function AboutMe() {
   return (
-    <div className="max-w-4xl mx-auto my-12 p-6">
-      <div className="not-prose mb-6 flex items-center space-x-4 rounded-lg bg-gray-700 p-4 shadow-lg dark:bg-white">
+    <div className="max-w-4xl mx-auto my-12 p-3">
+      <div className="not-prose mb-6 flex items-center space-x-4 rounded-lg bg-gray-700 p-3 shadow-lg dark:bg-white">
         <Image
           alt="Avatar"
           className="h-16 w-16 rounded-full object-cover"
