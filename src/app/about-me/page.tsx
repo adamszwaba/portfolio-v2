@@ -7,14 +7,7 @@ import SkillsSection from '@/features/about-me/stack/skills-section'
 export default function AboutMe() {
   return (
     <div className="max-w-4xl mx-auto my-12 p-3">
-      <div className="not-prose mb-6 flex items-center space-x-4 rounded-lg bg-gray-700 p-3 shadow-lg dark:bg-white">
-        <Image
-          alt="Avatar"
-          className="h-16 w-16 rounded-full object-cover"
-          height="64"
-          width="64"
-          src="/profile.jpg"
-        />
+      <div className="not-prose mb-6 flex items-center space-x-4 justify-between rounded-lg bg-gray-700 p-3  dark:bg-white shadow-lg shadow-gray-700 dark:shadow-white">
         <div>
           <h1 className="text-xl sm:text-3xl font-bold text-gray-100 dark:text-gray-800">
             @Adam Szwaba
@@ -23,6 +16,13 @@ export default function AboutMe() {
             Web Developer | Tech Enthusiast | Writer
           </p>
         </div>
+        <Image
+          alt="Avatar"
+          className="h-16 w-16 rounded-full object-cover shadow-slate-700 shadow-sm"
+          height="64"
+          width="64"
+          src="/profile.jpg"
+        />
       </div>
       <article className="text-gray-500">
         <header>
