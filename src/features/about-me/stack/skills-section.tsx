@@ -4,8 +4,8 @@ import SkillDisplay from "./skill-display";
 const SkillsSection = (stack: Stack) => {
   return (
     <>
-      <h3 className="mb-2 text-xl font-bold">Skills</h3>
-      <p className="mb-4">
+      <h3 className="mb-2 text-xl font-bold text-gray-600">Skills</h3>
+      <p className="mb-4 ">
         Here are a few technologies I've been working with recently:
       </p>
       {Object.entries(stack).map(([name, stackItems]) => (

@@ -28,9 +28,9 @@ export default function AboutMe() {
           </p>
         </div>
       </div>
-      <article className="text-gray-400">
+      <article className="text-gray-500">
         <header>
-          <h2 className="mb-2 text-2xl font-bold">About Me</h2>
+          <h2 className="mb-2 text-2xl font-bold text-gray-600">About Me</h2>
         </header>
         <section className="mb-6">
           <p className="mb-4">
@@ -56,7 +56,7 @@ export default function AboutMe() {
           </p>
         </section>
         <section className="mb-6">
-          <h2 className="mb-2 text-xl font-bold">Experience</h2>
+          <h2 className="mb-2 text-xl font-bold text-gray-600">Experience</h2>
           <p className="mb-4">
             Here's a brief overview of my professional experience:
           </p>
