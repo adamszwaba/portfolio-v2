@@ -11,12 +11,20 @@ const AppBar: React.FC = () => {
             @ Adam Szwaba
           </span>
         </NextLink>
-        <NextLink
-          href="/about-me"
-          className="text-sm sm:text-lg font-normal hover:text-teal-400 hover:underline"
-        >
-          About me
-        </NextLink>
+        <div className="flex gap-2">
+          <NextLink
+            href="/nwyt"
+            className="text-sm sm:text-lg font-normal hover:text-teal-400 hover:underline"
+          >
+            NWYT
+          </NextLink>
+          <NextLink
+            href="/about-me"
+            className="text-sm sm:text-lg font-normal hover:text-teal-400 hover:underline"
+          >
+            About me
+          </NextLink>
+        </div>
       </div>
     </nav>
   )
