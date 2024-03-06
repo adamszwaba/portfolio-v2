@@ -16,8 +16,7 @@ export default function Book() {
       <p>Czyjeś małżeństwo właśnie się skończyło.</p>
       <h1>1</h1>
       <p>
-        Piotr nie był szczególnie szczęśliwy kiedy przyszedł czas zakończyć studia, na których
-        według swojej rodziny miał zostać wiecznie, wiecznie też nękany przedziwną klątwą
+        Robert według swojej rodziny miał zostać wiecznie, wiecznie też nękany przedziwną klątwą
         niemożności zdania drugiego roku dowolnego kierunku.Było to w istocie przekleństwo
         przekazane przez rodziców, tak samo zresztą jak rodzice jego rodziców przekazali to samo
         cierpienie swoim dzieciom.
