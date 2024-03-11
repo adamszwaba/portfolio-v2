@@ -61,13 +61,31 @@ export const Nwyt = defineDocumentType(() => ({
   },
 }))
 
+export const Book = defineDocumentType(() => ({
+  name: 'Book',
+  filePathPattern: 'book/*.mdx',
+  contentType: 'mdx',
+  fields: {
+    title: {
+      type: 'string',
+      required: true,
+    },
+  },
+  computedFields: {
+    slug: {
+      type: 'string',
+      resolve: (article) => `/${article._raw.flattenedPath}`,
+    },
+  },
+}))
+
 const rpcOptions: Partial<Options> = {
   theme: 'catppuccin-mocha',
 }
 
 export default makeSource({
   contentDirPath: './src/content',
-  documentTypes: [Article, Nwyt],
+  documentTypes: [Article, Nwyt, Book],
   mdx: {
     //@ts-expect-error
     rehypePlugins: [[rpc, rpcOptions]],
