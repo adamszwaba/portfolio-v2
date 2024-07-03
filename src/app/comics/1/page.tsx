@@ -13,7 +13,7 @@ export const metadata: Metadata = {
   },
 };
 
-export default () => {
+const Page = () => {
   return (
     <article>
       <h1>Law of preservation</h1>
@@ -28,3 +28,5 @@ export default () => {
     </article>
   );
 };
+
+export default Page;
