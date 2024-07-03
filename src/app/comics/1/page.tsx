@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "Law of preservation",
+  title: "Law of conservation",
   description: "pv=nRT might have been the best dating advice I've ever gotten",
   metadataBase: new URL("https://adamszwaba.com"),
   openGraph: {
@@ -16,13 +16,13 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <article>
-      <h1>Law of preservation</h1>
+      <h1>Law of conservation</h1>
       <Image
         priority
         width={1200}
         height={1400}
         className="mx-auto rounded"
-        src="/static/law-of-preservation.png"
+        src="/static/law-of-conservation.png"
         alt="pv=nRT might have been the best dating advice I've ever gotten"
         title="pv=nRT might have been the best dating advice I've ever gotten"
       />
