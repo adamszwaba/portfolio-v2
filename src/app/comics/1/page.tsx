@@ -18,6 +18,7 @@ const Page = () => {
     <article>
       <h1>Law of preservation</h1>
       <Image
+        priority
         width={1200}
         height={1400}
         className="mx-auto rounded"
