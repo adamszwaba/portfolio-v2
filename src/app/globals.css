@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply prose dark:bg-slate-900 dark:prose-invert min-h-[100vh] bg-slate-50 max-w-none prose-a:text-teal-500 prose-a:font-semibold prose-a:transition-colors prose-a:duration-150 prose-a:ease-out prose-a:hover:text-teal-600 lg:prose-xl;
+  @apply prose min-h-[100vh] bg-white max-w-none prose-a:text-teal-500 prose-a:font-semibold prose-a:transition-colors prose-a:duration-150 prose-a:ease-out prose-a:hover:text-teal-600 lg:prose-xl;
 }
 
 #__next {
@@ -24,8 +24,8 @@ body {
 
   figcaption[data-rehype-pretty-code-title] {
     @apply overflow-hidden my-[0.125rem] rounded-sm bg-slate-800 p-2 text-sm font-mono  px-3 py-1 text-teal-300;
-    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono',
-      'Courier New', monospace;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+      "Liberation Mono", "Courier New", monospace;
   }
 
   figure[data-rehype-pretty-code-figure] [data-line] {
