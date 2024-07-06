@@ -2,27 +2,27 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "CSS hacks",
-  description: "<div center=true> should just work out of the box",
+  title: "Hospitality",
+  description: "Revenge is dish best served dysfunctional",
   metadataBase: new URL("https://adamszwaba.com"),
   openGraph: {
     type: "article",
     authors: ["Adam Szwaba"],
-    description: "<div center=true> should just work out of the box",
+    description: "Revenge is dish best served dysfunctional",
   },
 };
 
 const Page = () => {
   return (
     <article>
-      <h1> CSS hacks </h1>
+      <h1>Hospitality</h1>
       <Image
         priority
         fill
         className="w-full !static"
-        src="/static/css-hacks.png"
-        alt="<div center=true> should just work out of the box"
-        title="<div center=true> should just work out of the box"
+        src="/static/hospitality.png"
+        alt="Revenge is dish best served dysfunctional"
+        title="Revenge is dish best served dysfunctional"
       />
     </article>
   );

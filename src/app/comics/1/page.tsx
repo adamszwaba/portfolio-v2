@@ -19,9 +19,8 @@ const Page = () => {
       <h1>Law of conservation</h1>
       <Image
         priority
-        width={1200}
-        height={1400}
-        className="mx-auto rounded"
+        fill
+        className="w-full !static"
         src="/static/law-of-conservation.png"
         alt="pv=nRT might have been the best dating advice I've ever gotten"
         title="pv=nRT might have been the best dating advice I've ever gotten"
