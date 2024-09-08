@@ -9,6 +9,7 @@ const ComicsPage = () => {
       <Link href="/comics/4">4: Inner Child</Link>
       <Link href="/comics/5">5: C Major</Link>
       <Link href="/comics/6">6: Sandcastles </Link>
+      <Link href="/comics/7">7: Knitting</Link>
     </ul>
   );
 };
