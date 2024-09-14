@@ -2,7 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 
 export const metadata: Metadata = {
-  title: "The Little things",
+  title: "The Little Things",
   description: "I'm going to consider a career in golf for the next couple of days and then completely forget about it",
   metadataBase: new URL("https://adamszwaba.com"),
   openGraph: {
@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 const Page = () => {
   return (
     <article>
-      <h1>The Little things</h1>
+      <h1>The Little Things</h1>
       <Image
         priority
         fill
