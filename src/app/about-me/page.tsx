@@ -13,7 +13,7 @@ export default function AboutMe() {
             @Adam Szwaba
           </h1>
           <p className="text-gray-300 dark:text-gray-500 text-xs sm:text-lg">
-            Web Developer | Tech Enthusiast | Writer
+            Typescript & Go fullstack dev | Team leader
           </p>
         </div>
         <Image
@@ -30,23 +30,10 @@ export default function AboutMe() {
         </header>
         <section className="mb-6">
           <p className="mb-4">
-            I&apos;m a seasoned software engineer based in Wrocław, Poland, specializing in
-            developing high-quality websites and applications. Over 5 years of professional
-            experience, I have worked with a wide range of clients, from startups to large
-            corporations, for projects concerning fields such as finance, education, petrochemicals,
-            and more. It quickly turned out I have a talent for web development, and I promptly
-            became a senior developer.
+            I&apos;m famously bad at self promotion, so I&apos;ll keep it short and to the point: whether you need a full stack dev or a team lead (or both!), I&apos;ve probably done it. Due to my extensive experience in software houses, where I worked on one demanding project after another, as well as every self-made freelance, fullstack project I&apos;ve made, you can be sure I&apos;ll be there for you, your team and your product to deliver the stuff you need and guide you through the whole development process.
           </p>
-          <p className="mb-4">
-            I&apos;m currently working as a freelance web developer, helping businesses to improve
-            their online presence and reach their goals.
-          </p>
-          <p className="mb-4">
-            I have a passion for building intuitive, dynamic user experiences, and first and
-            foremost taking care of the current and future developer. I always strive to write
-            clean, maintainable code, and I&apos;m a strong advocate for the best UX out there.
-            Whether you&apos;re looking to build a new web app from scratch, or improve an existing
-            one, I&apos;d love to help you out!
+          <p className='mb-4'>
+            Wow, that really sounded like a commercial blurb. Anyway - I believe in simplicity and honesty, two principles that govern the way I lead projects and teams. If you would like to learn more, feel free to reach out, and also, hey, here&apos;s a list of my skills and experiences:
           </p>
         </section>
         <section className="mb-6">

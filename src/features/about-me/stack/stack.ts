@@ -31,10 +31,6 @@ export const stack: Stack = {
       name: 'Vite',
       level: 'intermediate',
     },
-    {
-      name: 'Angular',
-      level: 'beginner',
-    },
   ],
   testing: [
     {
